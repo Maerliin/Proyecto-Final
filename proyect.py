@@ -26,16 +26,32 @@ class Movie:
         """
         Esta metodo indica el nombre de la pelicula en mayuscula la primer letra de cada palabra.
         """
+        lista = self.titulo
+        lista = list(lista.split(" "))
+        peli = ""
+        for palabra in lista:
+            peli += (palabra.capitalize() + " ")
         print("La pelicula %s tiene el gango de: %i" %(self.titulo.capitalize(), self.rank))
+
 
     
 
 
 
 comando ("cls")
-pelicula1 = Movie("malefic")
-pelicula1.like()
-pelicula1.dislike()
-pelicula1.display()
+pelicula0 = Movie("malefic")
+pelicula0.like()
+pelicula0.dislike()
+pelicula0.display()
+
+pelicula1 = Movie("virus")
+pelicula2 = Movie("tangled")
+pelicula3 = Movie("frozen")
+pelicula4 = Movie("los pitufos")
+pelicula5 = Movie("violet")
+pelicula6 = Movie("mary shelley")
+pelicula7 = Movie("shadowhunters")
+pelicula8 = Movie("your name")
+pelicula9 = Movie("train to busan")
 
 
