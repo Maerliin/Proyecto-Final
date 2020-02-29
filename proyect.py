@@ -32,9 +32,21 @@ class Movie:
         for palabra in lista:
             peli += (palabra.capitalize() + " ")
         print("La pelicula %s tiene el gango de: %i" %(self.titulo.capitalize(), self.rank))
-
-
     
+    
+def orden(lista_peli):
+    lista = lista_peli
+    lista.sort()
+    print(lista)
+    archivo = open("C:\\Users\\76350\\trabajo_final_Mae\\movies_alpha.txt", "a")
+    for i in lista:
+        archivo.write(i + "\n")
+    archivo.close
+
+
+
+
+ 
 
 
 
@@ -55,3 +67,20 @@ pelicula8 = Movie("your name")
 pelicula9 = Movie("train to busan")
 
 
+
+lista = []
+lista.append(pelicula0.titulo)
+lista.append(pelicula1.titulo)
+lista.append(pelicula2.titulo)
+lista.append(pelicula3.titulo)
+lista.append(pelicula4.titulo)
+lista.append(pelicula5.titulo)
+lista.append(pelicula6.titulo)
+lista.append(pelicula7.titulo)
+lista.append(pelicula8.titulo)
+lista.append(pelicula9.titulo)
+
+#(lista)
+#lista.sort()
+#print(lista)
+orden(lista)
